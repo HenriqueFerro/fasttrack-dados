@@ -16,11 +16,18 @@ label_prefix = "tst"
 # vcn parameters
 create_drg = false
 internet_gateway_enabled = true
-nat_gateway_enabled = false
-service_gateway_enabled = false
+nat_gateway_enabled = true
+service_gateway_enabled = true
 vcn_cidr = "10.0.0.0/16"
 vcn_dns_label = "vcn"
 vcn_name = "vcn"
+
+# private subnet parameters
+sub_pvt_cidr = "10.0.1.0/24"
+sub_pub_cidr = "10.0.1.0/24"
+
+# bucket parameters
+bucket_namespace = "grql6ky0hxgc"
 
 tags = {
   environment = "tst"

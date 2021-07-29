@@ -106,6 +106,26 @@ variable "vcn_name" {
   default     = "vcn-module"
 }
 
+# subnet paramaters
+variable "sub_pvt_cidr" {
+  description = "cidr block of private Subnet"
+  type        = string
+  default     = "10.0.0.0/24"
+}
+
+variable "sub_pub_cidr" {
+  description = "cidr block of public Subnet"
+  type        = string
+  default     = "10.0.0.0/24"
+}
+
+# bucket parameters
+variable "bucket_namespace" {
+  description = "namespace for bucket"
+  type        = string
+  default     = "namespace"
+}
+
 # gateways parameters
 
 variable "drg_display_name" {
